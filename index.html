@@ -1,145 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ESX</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
-        }
-
-        .header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        .menu {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            background-color: #777777;
-            padding: 10px;
-            text-align: center;
-            color: #fff;
-            /* Set text color to white */
-        }
-
-        .menu a {
-            text-decoration: none;
-            /* Remove underline */
-            font-family: Arial, sans-serif;
-            /* Set font family */
-            font-size: 18px;
-            /* Set font size */
-            padding: 10px 20px;
-            /* Add padding for better spacing */
-            border-radius: 5px;
-            /* Add border radius for rounded corners */
-            transition: background-color 0.3s ease;
-            /* Add transition for smooth effect */
-        }
-
-        .menu a:hover {
-            background-color: #555;
-            /* Darken background color on hover */
-        }
-
-
-        .content {
-            text-align: center;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 50px;
-
-        }
-
-        .round-image {
-            align-items: center;
-            border-radius: 50%;
-            width: 200px;
-            height: 200px;
-            margin-bottom: 20px;
-            cursor: pointer;
-            /* Add cursor pointer for hover effect */
-        }
-
-        .button {
-            background-color: #3deaa5;
-            /* Light green */
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-            /* Add transition for smooth effect */
-        }
-
-        .button:hover {
-            background-color: #45ec80;
-            /* Darker green on hover */
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESX Fitness App</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-    <header class="header">
-        <h1>ESX</h1>
-    </header>
-
-    <nav class="menu">
-        <a href="#">Home</a> |
-        <a href="#">About</a> |
-        <a href="#">Services</a> |
-        <a href="#">Contact</a>
-    </nav>
-
+  <div class="container">
     <div class="content">
-        <br>
-        <br>
-        <br>
-        <br>
-
-        <img src="21.jpg" alt="Your Image" class="round-image" id="roundImage" onclick="changeImage()">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
-
-        <button class="button">Go Baby!</button>
+      <h1 id="hai">Hai ca poti, Ionut!</h1>
+      <button class="close-button">x</button>
+      <div class="subscription">
+        <p>Abonamentul tău este activ!</p>
+        <a href="#" id="vezi">Vezi sălile -></a>
+      </div>
+      <div class="character">
+        <img src="WhatsApp Image 2024-05-15 at 16.31.00.jpeg" alt="ESX Monkey Character">
+      </div>
+      <div>
+        <p id="intri">Intri la sala?</p>
+        <a href="#" class="cta-button">Scaneaza codul QR</a>
+      </div>
     </div>
+  </div>
 
-    <script>
-        function changeImage() {
-            var image = document.getElementById("roundImage");
-            if (image.src.match("21.jpg")) {
-                image.src = "21.png";
-            } else {
-                image.src = "21.jpg";
-            }
-        }
-    </script>
-
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
-
 </html>
