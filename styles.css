@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  height: 100vh;
+  position: relative;
+}
+
+#hai {
+    color: #019e9f;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #333;
+  color: #fff;
+}
+
+.content {
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.subscription {
+  background-color: #e6f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.icon-subscription {
+  font-size: 24px;
+  color: #4caf50;
+  margin-bottom: 10px;
+}
+
+.subscription p {
+  margin-bottom: 10px;
+}
+
+.subscription a {
+  color: #2196f3;
+  text-decoration: none;
+}
+
+.character img {
+  max-width: 350px;
+  margin-bottom: 230px;
+}
+
+
+.cta-button {
+  display: inline-block;
+  padding: 18px 20px;
+  background-color: #ff5722;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  width: 100%;
+  border-radius: 50px;
+}
+
+#intri{
+    margin-bottom: 10px;;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px; /* Poziționare la 10 pixeli de partea de sus */
+    right: 10px; /* Poziționare la 10 pixeli de partea dreaptă */
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 999; /* Asigură că butonul este afișat peste restul conținutului */
+  }
+
+  #vezi{
+    padding: 6px 20px;
+    background-color: white;
+    color: #019e9f;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border-radius: 50px;
+    margin-right: 80px;
+  }
+  
+
+@media (max-width: 375px) {
+  .container {
+    max-width: 100%;
+    height: auto;
+  }
+}
